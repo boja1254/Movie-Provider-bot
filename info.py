@@ -13,9 +13,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '22505271'))
-API_HASH = environ.get('API_HASH', 'c89a94fcfda4bc06524d0903977fc81e')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6994768927:AAGJMn6BjsJjhLP7yvTYxTL8d1kZkg8OQcE")
+API_ID = int(environ.get('API_ID', '27413960'))
+API_HASH = environ.get('API_HASH', 'cf7cd353231b0e8de46a62db082759d8')
+BOT_TOKEN = environ.get('BOT_TOKEN', "7853445807:AAHhTkQmrfF8sFJKgmh32XEFN48Bt_KJa4I")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -29,13 +29,13 @@ SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://telegra.ph/file/734170f40b8
 CODE = (environ.get('CODE', 'https://telegra.ph/file/72f425007b22d28bd935e.jpg'))
 
 #stream link shortner
-STREAM_SITE = (environ.get('STREAM_SITE', 'api.shareus.io'))
-STREAM_API = (environ.get('STREAM_API', 'PUIAQBIFrydvLhIzAOeGV8yZppu2'))
-STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/Ultroid_Official/18'))
+STREAM_SITE = (environ.get('STREAM_SITE', 'https://modijiurl.com/'))
+STREAM_API = (environ.get('STREAM_API', '944581c6025616589451ffb8573e2e327258c191'))
+STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/meoujkreal'))
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6695586027').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002027563292').split()] #Channel id for auto indexing ( make sure bot is admin )
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7807631357').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002291091752').split()] #Channel id for auto indexing ( make sure bot is admin )
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
